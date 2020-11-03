@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links do Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+    <!-- Links do qrcodejs -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/qrcode.js"></script>
+    <!-- Link para meu CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Texto para QR Code</title>
+</head>
+<body style="min-width: 350px; min-height: 300px;">
+    <div>
+        <div class="row">
+            <div class="col s12 m12">
+              <div class="card blue grey lighten-5">
+                <div class="card-content black-text">
+                    <span class="card-title">Texto para QR Code</span>
+                    <p>Insira o texto abaixo e clique no botão para transformar seu texto em um código QR.</p>
+                    <div class="row">
+                        <div class="col s6 m6">
+                            <input id="texto" type="text" value="" placeholder="Insira o texto para ser transformado em código QR"/>
+                        </div>
+                        <div class="col s6 m6">
+                            <button  id="send" class="btn waves-effect waves-light purple darken-1">Transformar!</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="qrcode" class="hide"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
